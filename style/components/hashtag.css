@@ -1,0 +1,13 @@
+@layer components {
+  /* 테마 비활성화(기본) */
+  .hashtag-off {
+    @apply px-5 py-2.5 text-base font-medium rounded-xl
+           inline-flex items-center justify-center transition-colors
+           bg-cream text-text-accent;
+  }
+
+  /* 테마 활성화 */
+  .hashtag-on {
+    @apply bg-brand-secondary text-white;
+  }
+}

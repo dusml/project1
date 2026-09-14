@@ -1,0 +1,17 @@
+@layer components {
+  /* 기본 */
+  .badge {
+    @apply px-4 py-1.5 text-sm font-semibold rounded-full
+           inline-flex items-center justify-center transition-colors;
+  }
+
+  /* 배경 색 있는 버튼 */
+  .badge-dark {
+    @apply bg-badge-primary-bg text-white;
+  }
+
+  /* 배경 색 없는 버튼 */
+  .badge-light {
+    @apply bg-white border border-border-default text-text-brand;
+  }
+}
