@@ -1,0 +1,25 @@
+@layer components{
+  .card{
+    @apply w-full min-h-95;
+  }
+  
+  .card-image{
+    @apply aspect-10/9 overflow-hidden rounded-t-sm mb-2;
+  }
+
+  .card-image img{
+    @apply w-full h-full object-cover;
+  }
+
+  .card-title{
+    @apply text-text-accent-strong text-lg xl:text-xl;
+  }
+
+  .card-artist{
+    @apply mb-2 text-sm text-text-accent
+  }
+
+  .card-description{
+    @apply text-text-secondary text-xs mb-3 break-all line-clamp-2;
+  }
+}
