@@ -1,0 +1,10 @@
+@layer{
+  /* section */
+  .content-spacing{
+    @apply py-4 px-6 xl:p-3
+  }
+  /* section-inner */
+  .content-inner{
+    @apply m-auto p-5 xl:max-w-7xl
+  }
+}

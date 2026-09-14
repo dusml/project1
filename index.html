@@ -3,13 +3,134 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
+  <title>SkyBEAT</title>
+  <link rel="stylesheet" href="./style/output.css"/>
+  <link rel="shortcut icon" href="./assets/cloud.png" type="image/x-icon"/>
 </head>
 <body>
-  <div class="wrap">
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <div class="wrap bg-Ivory min-h-screen">
+    <header>
+      <!-- header-inner -->
+      <div class="max-w-7xl m-auto px-2 xl:px-0">
+        <!-- header-top -->
+        <div
+        class="
+          flex justify-between items-center
+          border-b border-border-default
+          p-3
+          xl:px-0
+          ">
+          <!-- logo -->
+          <h1>
+            <a href="index.html" class="inline-block max-w-30">
+              <img src="./assets/logo.png" alt="SkyBEAT헤더로고"/>
+            </a>
+          </h1>
+          <!-- search -->
+          <div class="w-full max-w-md hidden md:block">
+            <!-- search-box -->
+            <div
+              class="
+                border-2 rounded-full border-border-default
+                px-4 py-2
+              ">
+              <input
+              type="search"
+              placeholder="검색어를 입력해 주세요."
+              class="w-full"
+              />
+            </div>
+            
+          </div>
+          <!-- login -->
+          <div class="hidden md:flex gap-1 ">
+            <button
+              type="button"
+              class="
+                btn btn-light
+              "
+              >로그인</button>
+            <button
+              type="button"
+              class="
+                btn btn-dark
+              "
+              >회원가입</button>
+          </div>
+          <!-- ham button -->
+          <button
+            type="button"
+            aria-label="메뉴 열기"
+            class="flex flex-col gap-1.5 p-2 md:hidden focus:outline-2 cursor-pointer"
+          >
+            <span class="block w-6 h-0.5 bg-brand-strong"></span>
+            <span class="block w-6 h-0.5 bg-brand-strong"></span>
+            <span class="block w-6 h-0.5 bg-brand-strong"></span>
+          </button>
+        </div>
+        <!-- header-botom -->
+        <div
+        class="
+          header-bottom
+          p-3
+          xl:px-0
+          ">
+          <nav aria-label="주요메뉴">
+            <ul class="
+              flex items-center gap-6
+            ">
+              <li>
+                <a href="#">HOME</a>
+              </li>
+              <li>
+                <a href="#">인기차트</a>
+              </li>
+              <li>
+                <a href="#">신규</a>
+              </li>
+              <li>
+                <a href="#">테마</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="content-spacing">
+        <!-- hero innner -->
+        <div class="content-inner bg-brand-soft flex flex-col gap-5 md:flex-row md:rounded-tr-full shadow-md">
+          <figure class="aspect-3/2 overflow-hidden rounded-sm">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/145/35/765/14535765_20260909154035_500.jpg?0b64762c3d99481dd8244f57cf5baa06/melon/resize/282/quality/80/optimize"
+              alt="이 별로부터-아이유 싱글 앨범"
+              class="w-full h-full object-cover"
+              />
+          </figure>
+          <div class="hero-description">
+            <h2 class="mb-2 text-text-accent-strong md:text-2xl xl:text-3xl">오늘의 추천 곡🎵</h2>
+            <p class="mb-2 text-text-accent">IU · 이 별로부터</p>
+            <p class="mb-5 text-text-accent text-[12px]">오늘 밤, 문득 전하고 싶은 마음이 있다면. <br/>아이유의 목소리와 함께 천천히 마음을 들여다보세요.</p>
+
+              <div class="hero-link flex gap-3">
+                <a
+                href="#"
+                class="
+                inline-block btn btn-dark btn-dark-wide
+                "
+                >YouTube 바로가기</a>
+                <a
+                href="#"
+                class="
+                inline-block btn btn-dark btn-dark-wide
+                "
+                >Melon 바로가기</a>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+@layer components{
+  .btn{
+    @apply px-2 py-1 rounded-sm cursor-pointer transition-all 
+    focus:outline-2 focus:outline-offset-2 focus:outline-brand-primary-hover
+    text-sm  hover:bg-brand-primary-hover
+    md:text-base
+  }
+
+  .btn-light{
+    @apply  bg-white text-text-brand border border-border-default
+    hover:border-border-secondary hover:text-text-white
+  }
+
+  .btn-dark{
+    @apply  bg-brand-primary text-text-white
+  }
+  .btn-dark-wide{
+    @apply px-4
+  }
+
+  .btn-full{
+    @apply w-full max-w-125
+  }
+  
+}
