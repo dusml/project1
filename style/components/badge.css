@@ -1,8 +1,8 @@
 @layer components {
   /* 기본 */
   .badge {
-    @apply px-4 py-1.5 text-sm font-semibold rounded-full
-           inline-flex items-center justify-center transition-colors;
+    @apply px-2 py-1 text-[13px] rounded-full
+          inline-flex items-center justify-center transition-colors;
   }
 
   /* 배경 색 있는 버튼 */
