@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SkyBEAT</title>
   <link rel="stylesheet" href="./style/output.css"/>
-  <link rel="shortcut icon" href="./assets/cloud.png" type="image/x-icon"/>
+  <link rel="icon" href="./assets/cloud.png" type="image/png">
 </head>
 <body>
   <div class="wrap bg-Ivory min-h-screen">
-    <header>
+    <header class="shadow-xs md:shadow-none
+    ">
       <!-- header-inner -->
       <div class="content-inner px-2 xl:px-0">
         <!-- header-top -->
         <div
         class="
           flex justify-between items-center
-          border-b border-border-default
-          p-3
-          xl:px-0
-          ">
+          md:border-b md:border-border-default
+          p-3">
           <!-- logo -->
           <h1>
             <a href="index.html" class="inline-block max-w-30">
-              <img src="./assets/logo.png" alt="SkyBEAT헤더로고"/>
+              <img src="./assets/logo.png" alt="SkyBEAT"/>
             </a>
           </h1>
           <!-- search -->
@@ -34,7 +33,9 @@
                 border-2 rounded-full border-border-default
                 px-4 py-2
               ">
+              <label for="site-search" class="sr-only">검색창</label>
               <input
+              id="site-search"
               type="search"
               placeholder="검색어를 입력해 주세요."
               class="w-full"
@@ -43,7 +44,7 @@
             
           </div>
           <!-- login -->
-          <div class="hidden md:flex gap-1 ">
+          <div class="hidden md:flex gap-2 ">
             <button
               type="button"
               class="
@@ -74,14 +75,13 @@
           hidden
           p-3
           md:block
-          xl:px-0
           ">
           <nav aria-label="주요메뉴">
             <ul class="
               flex items-center gap-6
             ">
               <li>
-                <a href="#" class="text-text-brand">HOME</a>
+                <a href="index.html" class="text-text-brand">HOME</a>
               </li>
               <li>
                 <a href="#" class="text-text-secondary transition-colors hover:text-text-brand">인기차트</a>
@@ -105,24 +105,26 @@
           <figure class="aspect-3/2 overflow-hidden rounded-sm">
             <img
               src="https://cdnimg.melon.co.kr/cm2/album/images/145/35/765/14535765_20260909154035_500.jpg?0b64762c3d99481dd8244f57cf5baa06/melon/resize/282/quality/80/optimize"
-              alt="이 별로부터-아이유 싱글 앨범"
+              alt="아이유- 이 별로부터 싱글 앨범"
               class="w-full h-full object-cover"
               />
           </figure>
-          <div class="hero-description">
-            <h2 >오늘의 추천 곡🎵</h2>
-            <p class="mb-2 text-text-accent">IU · 이 별로부터</p>
-            <p class="mb-5 text-text-accent text-[12px]">오늘 밤, 문득 전하고 싶은 마음이 있다면. <br/>아이유의 목소리와 함께 천천히 마음을 들여다보세요.</p>
+          <div>
+            <h2 class="title">오늘의 추천 곡🎵</h2>
+            <p class="text-lg mb-2 text-text-accent-strong">이 별로부터 <span class=" text-text-accent text-sm">IU</span></p>
+            <p class="text-sm mb-5 text-text-accent">오늘 밤, 문득 전하고 싶은 마음이 있다면. <br/>아이유의 목소리와 함께 천천히 마음을 들여다보세요.</p>
 
-              <div class="hero-link flex gap-3">
+              <div class="flex gap-3">
                 <a
                 href="#"
+                target="_blank"
                 class="
                 inline-block btn btn-dark btn-dark-wide
                 "
                 >YouTube 바로가기</a>
                 <a
                 href="#"
+                target="_blank"
                 class="
                 inline-block btn btn-dark btn-dark-wide
                 "
@@ -132,10 +134,75 @@
         </div>
       </section>
 
+      <section class="content-spacing">
+        <div class="content-inner">
+          <h2 class="title">신규 발매곡</h2>
+          <div class="grid grid-cols-3 gap-6">
+            <!-- 앨범 1 -->
+            <article class="card group">
+              <a href="#">
+                <figure class="card-image">
+                  <img
+                    src="https://cdnimg.melon.co.kr/cm2/album/images/145/38/586/14538586_20260910103529_500.jpg?e9d8be85b91fd35b7acfceae9c232245/melon/resize/282/quality/80/optimize"
+                    alt="LE SSERAFIM - Made My Night 앨범 커버"
+                  >
+                </figure>
+
+                <div class="mb-2">
+                  <h3 class="card-title">Made My Night</h3>
+                  <p class="card-artist">LE SSERAFIM(르세라핌)</p>
+                  <p class="card-description">
+                  특별한 누군가와 함께라면 평범한 밤도 다르다. 기분 좋은 설렘을 가득 안고 돌아온 르세라핌!
+                  </p>  
+                </div>
+              </a>
+            </article>
+            <!-- 앨범 2 -->
+            <article class="card group">
+              <a href="#">
+                <figure class="card-image">
+                  <img
+                    src="https://cdnimg.melon.co.kr/cm2/album/images/144/63/127/14463127_20260819092848_500.jpg?c4f29d951c41970cde93c9ca539ea488/melon/resize/260/quality/80/optimize"
+                    alt="BIGBANG - BiiiG 앨범 커버"
+                  />
+                </figure>
+
+                <div class="mb-2">
+                  <h3 class="card-title">BiiiG</h3>
+                  <p class="card-artist">BIGBANG(빅뱅)</p>
+                  <p class="card-description">
+                    2세대 대표 아이돌, 살아있는 전설. 빅뱅의 화려한 컴백.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <!-- 앨범 3 -->
+            <article class="card group">
+              <a href="#">
+                <figure class="card-image">
+                  <img
+                    src="https://cdnimg.melon.co.kr/cm2/album/images/145/26/395/14526395_20260907104149_500.jpg?YUV444/melon/resize/282"
+                    alt="도경수(D.O.) - Guitarist 앨범 커버"
+                  />
+                </figure>
+
+                <div class="mb-2">
+                  <h3 class="card-title">Guitarist</h3>
+                  <p class="card-artist">도경수(D.O.)</p>
+                  <p class="card-description">
+                    기타는 잔잔하다는 편견을 깨뜨릴, 신나면서도 애틋한 러브송의 등장.
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <!-- tag -->
       <section class="content-spacing" aria-label="태그 음악 목록">
         <div class="content-inner py-5">
-          <h2 class="mb-2 text-text-accent-strong md:text-xl xl:text-2xl">오늘의 기분 & 테마</h2>
+          <h2 class="title">오늘의 기분 & 테마</h2>
           <p class="mb-3 text-text-accent text-[12px]">지금 이 순간, 어떤 음악이 듣고 싶나요?</p>
           
           <div class="flex items-center justify-between mb-4">
@@ -150,7 +217,7 @@
             <a href="#" class="text-[12px]">더보기&rarr;</a>
           </div>
 
-          <div class="cards grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="cards grid gap-5 grid-cols-2 md:grid-cols-4">
             <!-- card -->
             <article class="card">
               <figure class="card-image">
@@ -161,7 +228,7 @@
               </figure>
               <div class="card-content p-1">
                 <h3 class="card-title">널 많이 사랑해</h3>
-                <p class="card-artist">란<small>(RAN)</small></p>
+                <p class="card-artist">란<span>(RAN)</span></p>
                 <p class="card-description">
                   사랑하는 이의 든든한 안식처가 되어주겠다는 진심 어린 마음을 그린 새 디지털 싱글 ‘널 많이 사랑해’를 발표...
                 </p>
@@ -182,7 +249,7 @@
               </figure>
               <div class="card-content p-1">
                 <h3 class="card-title">LOVE ATTACK</h3>
-                <p class="card-artist">RESCENE <small>(리센느)</small></p>
+                <p class="card-artist">RESCENE <span>(리센느)</span></p>
                 <p class="card-description">
                   앨범마다 새로운 향기를 퍼뜨리는 RESCENE(리센느)가 바다의 Ambergris 향을 가득 머금은 미니 1집 앨범 [SCENEDROME]으로 돌아왔다.
                 </p>
@@ -203,7 +270,7 @@
               </figure>
               <div class="card-content p-1">
                 <h3 class="card-title">널 많이 사랑해</h3>
-                <p class="card-artist">아이오아이 <small>(I.O.I)</small></p>
+                <p class="card-artist">아이오아이 <span>(I.O.I)</span></p>
                 <p class="card-description">
                     “갑자기 찾아온 감정처럼, 멈춰 있던 시간과 다시 이어지는 이야기”10년의 시간 속에 멈춰 있던 감정들이 다시 이어지는 순간을 담은 앨범이다.
                 </p>
@@ -327,50 +394,62 @@
       </section>
     </main>
 
-    <footer class="bg-skyblue-900 text-white py-3 px-12">
+    <footer class=" bg-skyblue-900 text-white px-2 xl:px-0">
       <div class="content-inner flex flex-col justify-between">
         <!-- 메뉴 -->
-        <div class="flex items-center gap-6 text-sm font-medium p-3">
-            <a href="#" class="hover:text-text-brand transition-colors">공지사항</a>
-            <a href="#" class="hover:text-text-brand transition-colors">자주 묻는 질문</a>
-            <a href="#" class="hover:text-text-brand transition-colors">이용약관</a>
-            <a href="#" class="hover:text-text-brand transition-colors">문의하기</a>
-        </div>
-
+        <nav class="border-b border-b-Ivory" aria-label="푸터 메뉴">
+          <ul class="flex items-center gap-6 text-sm px-3 py-4">
+            <li>
+              <a href="#" class="text-text ">공지사항</a>
+            </li>
+            <li>
+              <a href="#" class="">자주 묻는 질문</a>
+            </li>
+            <li>
+              <a href="#" class="">이용약관</a>
+            </li>
+            <li>
+              <a href="#" class="">문의하기</a>
+            </li>
+          </ul>
+        </nav>
+        
         <!-- Footer -->
-        <div class="flex flex-col items-center justify-between gap-3 md:flex-row border-t-Ivory p-3">
-            <!--  SkyBEAT 로고 -->
-            <div class="flex items-center">
-                <a href="main-page.html" class="inline-block max-w-30">
-                    <img src="./assets/flogo.png" alt="SkyBEAT푸터로고"/>
-                </a>
-            </div>
+        <div class="flex flex-col items-center gap-2 justify-between md:flex-row px-3 py-4">
+          <!--  SkyBEAT 로고 -->
+          <p class="flex items-center">
+            <a href="index.html" class="inline-block max-w-30">
+              <img src="./assets/flogo.png" alt="SkyBEAT"/>
+            </a>
+          </p>
 
-            <!-- 저작권 문구 -->
-            <div class="text-xs text-text-third self-center mt-6 md:mt-0">
-                © 2026 SkyBEAT. All rights reserved.
-            </div>
+          <!-- 저작권 문구 -->
+          <small class="text-text-third">&copy; 2026 SkyBEAT. All rights reserved.</small>
 
-            <!-- SNS 로고 -->
-            <div class="flex items-center gap-4">
-                <a href="#"
-                  class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
-                <img src="./assets/discord.png" alt="디스코드로고">
-                </a>
-        
-                <a href="#"
-                  class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
-                <img src="./assets/instagram.png" alt="인스타그램로고">
-                </a>
-        
-                <a href="#"
-                  class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
-                <img src="./assets/youtube.png" alt="유튜브로고">
-                </a>
-            </div>
+          <!-- SNS 로고 -->
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#"
+                class="w-6 h-6 flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity">
+                <img src="./assets/discord.png" alt="디스코드">
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="w-6 h-6 flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity">
+              <img src="./assets/instagram.png" alt="인스타그램">
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="w-6 h-6 flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity">
+              <img src="./assets/youtube.png" alt="유튜브">
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
