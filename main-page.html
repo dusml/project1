@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SkyBEAT</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-slate-50">
+<main class="max-w-7xl mx-auto px-4 md:px-6 xl:px-8">
+<div class="wrap min-h-screen bg-Ivory md:px-4 xl:px-6">
+      <!-- header 전체 -->
+      <header class="shadow-md/2 mb-5">
+        <!-- header-inner -->
+        <div class="max-w-7xl m-auto px-2 xl:px-0">
+          <!-- header-top -->
+          <div
+          class="
+            flex justify-between items-center
+            border-b border-border-default
+            p-3
+            xl:px-0
+            ">
+            <!-- logo -->
+            <h1>
+              <a href="main-page.html" class="inline-block max-w-30">
+                <img src="./assets/logo.png" alt="SkyBEAT헤더로고"/>
+              </a>
+            </h1>
+            <!-- search -->
+            <div class="w-full max-w-md hidden md:block">
+              <!-- search-box -->
+              <div
+                class="
+                  border-2 rounded-full border-border-default
+                  px-4 py-2
+                ">
+                <input
+                type="search"
+                placeholder="검색어를 입력해 주세요."
+                class="w-full"
+                />
+              </div>
+              
+            </div>
+            <!-- login -->
+            <div class="hidden md:flex gap-1 ">
+              <button
+                type="button"
+                class="
+                  bg-white text-text-brand border border-border-default
+                  hover:border-border-secondary hover:bg-brand-secondary hover:text-text-white
+                  px-2 py-1
+                  rounded-sm cursor-pointer
+                  transition-all
+                "
+                >로그인</button>
+              <button
+                type="button"
+                class="
+                  bg-brand-primary text-text-white
+                  hover:bg-brand-secondary
+                  px-2 py-1
+                  rounded-sm cursor-pointer
+                  transition-all
+                  
+                "
+                >회원가입</button>
+            </div>
+            <!-- ham button -->
+            <button
+              type="button"
+              aria-label="메뉴 열기"
+              class="flex flex-col gap-1.5 p-2 md:hidden focus:outline-2 cursor-pointer"
+            >
+              <span class="block w-6 h-0.5 bg-brand-strong"></span>
+              <span class="block w-6 h-0.5 bg-brand-strong"></span>
+              <span class="block w-6 h-0.5 bg-brand-strong"></span>
+            </button>
+          </div>
+          <!-- header-botom -->
+          <div
+          class="
+            header-bottom
+            p-3
+            xl:px-0
+            ">
+            <nav aria-label="주요메뉴">
+              <ul class="
+                flex items-center gap-6 font-bold pb-1
+              ">
+                <li>
+                  <a href="#">HOME</a>
+                </li>
+                <li>
+                  <a href="#">인기차트</a>
+                </li>
+                <li>
+                  <a href="#">신규</a>
+                </li>
+                <li>
+                  <a href="#">테마</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero -->
+      <section class="content-spacing">
+        <!-- hero innner -->
+        <div class="content-inner bg-brand-soft flex flex-col gap-5 md:flex-row md:rounded-tr-full shadow-md">
+          <figure class="aspect-3/2 overflow-hidden rounded-sm">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/145/35/765/14535765_20260909154035_500.jpg?0b64762c3d99481dd8244f57cf5baa06/melon/resize/282/quality/80/optimize"
+              alt="이 별로부터-아이유 싱글 앨범"
+              class="w-full h-full object-cover"
+              />
+          </figure>
+          <div class="hero-description">
+            <h2 class="mb-2 text-text-accent-strong md:text-2xl xl:text-3xl">오늘의 추천 곡🎵</h2>
+            <p class="mb-2 text-text-accent">IU · 이 별로부터</p>
+            <p class="mb-5 text-text-accent text-[12px]">오늘 밤, 문득 전하고 싶은 마음이 있다면. <br/>아이유의 목소리와 함께 천천히 마음을 들여다보세요.</p>
+
+              <div class="hero-link flex gap-3">
+                <a
+                href="#"
+                class="
+                inline-block btn btn-dark btn-dark-wide
+                "
+                >YouTube 바로가기</a>
+                <a
+                href="#"
+                class="
+                inline-block btn btn-dark btn-dark-wide
+                "
+                >Melon 바로가기</a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="max-w-6xl mx-auto px-8 mt-12 mb-16">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">신규 발매곡</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+            <!-- 앨범1 -->
+            <div class="flex flex-col group cursor-pointer">
+                <div class="w-full h-64 rounded-2xl overflow-hidden shadow-md mb-3 bg-gray-100">
+                    <img
+                        src="https://cdnimg.melon.co.kr/cm2/album/images/145/38/586/14538586_20260910103529_500.jpg?e9d8be85b91fd35b7acfceae9c232245/melon/resize/282/quality/80/optimize"
+                        alt="LE SSERAFIM - Made My Night 앨범 커버"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-gray-800 text-base">Made My Night</h3>
+                        <span class="text-sm text-gray-400">LE SSERAFIM(르세라핌)</span>
+                    </div>
+                        <p class="text-xs text-gray-500 mt-1 line-clamp-1">특별한 누군가와 함께라면 평범한 밤도 다르다. 기분 좋은 설렘을 가득 안고 돌아온 르세라핌!</p>
+                 </div>
+            </div>
+
+            <!-- 앨범2 -->
+            <div class="flex flex-col group cursor-pointer">
+                <div class="w-full h-64 rounded-2xl overflow-hidden shadow-md mb-3 bg-gray-100">
+                    <img
+                        src="https://cdnimg.melon.co.kr/cm2/album/images/144/63/127/14463127_20260819092848_500.jpg?c4f29d951c41970cde93c9ca539ea488/melon/resize/260/quality/80/optimize"
+                        alt="BIGBANG - BiiiG 앨범 커버"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-gray-800 text-base">BiiiG</h3>
+                        <span class="text-sm text-gray-400">BIGBANG(빅뱅)</span>
+                    </div>
+                        <p class="text-xs text-gray-500 mt-1 line-clamp-1">2세대 대표 아이돌, 살아있는 전설. 빅뱅의 화려한 컴백.</p>
+                 </div>
+            </div>
+
+            <!-- 앨범3 -->
+            <div class="flex flex-col group cursor-pointer">
+                <div class="w-full h-64 rounded-2xl overflow-hidden shadow-md mb-3 bg-gray-100">
+                    <img
+                        src="https://cdnimg.melon.co.kr/cm2/album/images/145/26/395/14526395_20260907104149_500.jpg?YUV444/melon/resize/282"
+                        alt="도경수(D.O.) - DOPAMINE 앨범 커버"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-gray-800 text-base">Guitarist</h3>
+                        <span class="text-sm text-gray-400">도경수(D.O.)</span>
+                    </div>
+                        <p class="text-xs text-gray-500 mt-1 line-clamp-1">기타는 잔잔하다는 편견을 깨뜨릴, 신나면서도 애틋한 러브송의 등장.</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- tag -->
+      <section class="content-spacing" aria-label="태그 음악 목록">
+        <div class="content-inner py-5">
+          <h2 class="mb-2 text-text-accent-strong md:text-xl xl:text-2xl">오늘의 기분 & 테마</h2>
+          <p class="mb-3 text-text-accent text-[12px]">지금 이 순간, 어떤 음악이 듣고 싶나요?</p>
+          
+          <div class="flex items-center justify-between mb-4">
+            <div class="tag-group flex flex-wrap gap-3">
+              <button type="button" class="hashtag hashtag-off">#전체</button>
+              <button type="button" class="hashtag hashtag-off">#신나는</button>
+              <button type="button" class="hashtag hashtag-off">#잔잔한</button>
+              <button type="button" class="hashtag hashtag-off">#새벽감성</button>
+              <button type="button" class="hashtag hashtag-off">#비오는날</button>
+              <button type="button" class="hashtag hashtag-off">#리듬감</button>
+            </div>
+            <a href="#" class="text-[12px]">더보기&rarr;</a>
+          </div>
+
+          <div class="cards grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <!-- card -->
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/145/34/963/14534963_20260909110409_500.jpg?4cf9d1b4163e68ca00220136e7d10760/melon/resize/282/quality/80/optimize"
+                  alt="란 - 널 많이 사랑해 앨범 커버"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">널 많이 사랑해</h3>
+                <p class="card-artist">란<small>(RAN)</small></p>
+                <p class="card-description">
+                  사랑하는 이의 든든한 안식처가 되어주겠다는 진심 어린 마음을 그린 새 디지털 싱글 ‘널 많이 사랑해’를 발표...
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-light"># 사랑</span>
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-dark"># BEST</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/115/75/849/11575849_20240826152240_500.jpg?da43be78cb2cc67e9ee423c739bc09b6/melon/resize/282/quality/80/optimize"
+                  alt="LOVE ATTACK - 리센느 앨범"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">LOVE ATTACK</h3>
+                <p class="card-artist">RESCENE <small>(리센느)</small></p>
+                <p class="card-description">
+                  앨범마다 새로운 향기를 퍼뜨리는 RESCENE(리센느)가 바다의 Ambergris 향을 가득 머금은 미니 1집 앨범 [SCENEDROME]으로 돌아왔다.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-dark"># New</span>
+                <span class="badge badge-light"># K-POP</span>
+                <span class="badge badge-light"># 댄스</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/133/99/673/13399673_20260518151131_500.jpg?87de97fb7105b703fcaf0b07a9190ed0/melon/resize/282/quality/80/optimize"
+                  alt="아이오아이 - 널 많이 사랑해 앨범"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">널 많이 사랑해</h3>
+                <p class="card-artist">아이오아이 <small>(I.O.I)</small></p>
+                <p class="card-description">
+                    “갑자기 찾아온 감정처럼, 멈춰 있던 시간과 다시 이어지는 이야기”10년의 시간 속에 멈춰 있던 감정들이 다시 이어지는 순간을 담은 앨범이다.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-light"># HOT</span>
+                <span class="badge badge-dark"># K-POP</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/137/65/551/13765551_20260626112146_500.jpg?e5fd209ff686e3e356061d7b0f671916/melon/resize/282/quality/80/optimize"
+                  alt=" 태연 - 만찬가 앨범 커버"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">만찬가</h3>
+                <p class="card-artist">태연</p>
+                <p class="card-description">
+                  한국과 일본, 두 나라의 음악을 잇는 새로운 프로젝트 'J-POP REMAKE'가 시작된다. 가수 겸 방송인 강남이 기획을 맡은 이 프로젝트는 일본의 명곡들을 한국을 대표하는 아티스트의 목소리로 새롭게 들려주며, 음악을 통한 양국 교류를 그려낸다.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-dark"># HOT</span>
+                <span class="badge badge-light"># JPOP</span>
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-light"># 커버</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/138/23/274/13823274_20260721152311_500.jpg?aeb7532912667e9cb78e7676f5d4c8db/melon/resize/282/quality/80/optimize"
+                  alt="볼빨간사춘기 - 여름아 부탁해 앨범"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">여름아 부탁해</h3>
+                <p class="card-artist">볼빨간사춘기</p>
+                <p class="card-description">
+                  당신이 지나온 가장 푸르렀던 계절로 데려가, 올여름이 다시 한번 반짝이기를. 여름아 부탁해.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-light"># 여름</span>
+                <span class="badge badge-light"># 계절</span>
+                <span class="badge badge-dark"># HOT</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/119/82/233/11982233_20250801150859_500.jpg?d6a94600cb22c36878cae0223dc86292/melon/resize/282/quality/80/optimize"
+                  alt="한로로 - 0+0 앨범 커버"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">0+0</h3>
+                <p class="card-artist">한로로</p>
+                <p class="card-description">
+                  「‘죽음.’ 자몽살구클럽을 관통하는 단어이자 우리들의 모순적인 소원. 나는 알고 있다. 죽고 싶지만 실은 죽고 싶지 않은 서로의 진심을 알아줄 사람은 서로밖에 없음을.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-light"># 사랑</span>
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-dark"># BEST</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/114/77/689/11477689_20240507151429_500.jpg?da59e0849d54eb7e6ccff961e44f8d70/melon/resize/282/quality/80/optimize"
+                  alt="도경수 - Popcorn 앨범 커버"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">Popcorn</h3>
+                <p class="card-artist">도경수</p>
+                <p class="card-description">
+                  도경수(D.O.)가 세 번째 미니 앨범 '성장'으로 봄을 전한다. 3집 미니앨범 '성장'은 엉뚱하고 사랑스러운 성장 러브스토리를 담은 타이틀 곡 'Mars'를 포함해 총 6곡으로 구성되어 있으며, 도경수의 독보적인 음색과 봄을 연상시키는 따뜻한 감성이 조화를 이룬 고감도 앨범이다.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-light"># 봄</span>
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-dark"># BEST</span>
+                <span class="badge badge-light"># 따뜻</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <figure class="card-image">
+                <img
+                  src="https://cdnimg.melon.co.kr/cm2/album/images/145/34/963/14534963_20260909110409_500.jpg?4cf9d1b4163e68ca00220136e7d10760/melon/resize/282/quality/80/optimize"
+                  alt="김나영 - 봄 내음보다 너를 앨범 커버"
+                />
+              </figure>
+              <div class="card-content p-1">
+                <h3 class="card-title">봄 내음보다 너를</h3>
+                <p class="card-artist">김나영</p>
+                <p class="card-description">
+                  `봄 내음보다 너를`은 제목에서 말해주듯 봄 내음보다 더 설레게 하는 사랑했던 시절을 추억하는 노래이다. 노래의 전반적인 흐름을 이끌어가는 감성 아티스트 적재의 Acoustic Guitar 선율이 표현한 쓸쓸함이 아련한 추억의 감성을 더욱 짙게 느낄 수 있게 하고 있다. 
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-dark"># BEST</span>
+                <span class="badge badge-light"># 사랑</span>
+                <span class="badge badge-light"># 감성</span>
+                <span class="badge badge-light"># 추억</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+<footer class="w-full bg-skyblue-900 text-white py-4 px-12">
+    <div class="max-w-7xl mx-auto flex flex-col justify-between">
+    
+        <!-- 메뉴 -->
+        <div class="flex items-center gap-6 text-sm font-medium mb-2">
+            <a href="#" class="hover:text-text-brand transition-colors">공지사항</a>
+            <a href="#" class="hover:text-text-brand transition-colors">자주 묻는 질문</a>
+            <a href="#" class="hover:text-text-brand transition-colors">이용약관</a>
+            <a href="#" class="hover:text-text-brand transition-colors">문의하기</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-700/60 pt-6">
+      
+            <!--  SkyBEAT 로고 -->
+            <div class="flex items-center">
+                <a href="main-page.html" class="inline-block max-w-30">
+                    <img src="./assets/logo.png" alt="SkyBEAT푸터로고"/>
+                </a>
+            </div>
+
+            <!-- 저작권 문구 -->
+            <div class="text-xs text-text-third self-center mt-6 md:mt-0">
+                © 2026 SkyBEAT. All rights reserved.
+            </div>
+
+            <!-- SNS 로고 -->
+            <div class="flex items-center gap-4">
+                <a href="#"
+                   class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
+                <img src="./assets/discord.png" alt="디스코드로고">
+                </a>
+        
+                <a href="#"
+                   class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
+                <img src="./assets/instagram.png" alt="인스타그램로고">
+                </a>
+        
+                <a href="#"
+                   class="w-6 h-6 flex items-center justify-center hover:opacity-90 transition-opacity">
+                <img src="./assets/youtube.png" alt="유튜브로고">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+</main>    
+</body>
+</html>
