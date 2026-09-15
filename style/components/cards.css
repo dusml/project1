@@ -22,4 +22,8 @@
   .card-description{
     @apply text-text-secondary text-xs mb-3 break-all line-clamp-2;
   }
+
+  .card-up{
+    @apply hover:translate-y-1
+  }
 }

@@ -2,7 +2,7 @@
   .btn{
     @apply px-2 py-1 rounded-sm cursor-pointer transition-all 
     focus:outline-2 focus:outline-offset-2 focus:outline-brand-primary-hover
-    text-sm  hover:bg-brand-primary-hover
+    text-[13px]  hover:bg-brand-primary-hover
     md:text-base
   }
 

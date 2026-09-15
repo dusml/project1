@@ -1,16 +1,19 @@
 @layer components {
   /* 공통 */
   .hashtag{
-    @apply px-2 py-1 text-[13px] rounded-full
-          /* inline-flex items-center justify-center transition-colors */
+    @apply px-2 py-1 text-[13px] rounded-sm
+          inline-flex items-center justify-center transition-colors
+          cursor-pointer
+          focus:outline-2 focus:outline-offset-2 focus:outline-brand-primary-hover;
   }
   /* 테마 비활성화(기본) */
   .hashtag-off {
-    @apply bg-cream border border-border-secondary text-text-accent;
+    @apply bg-cream border text-text-accent
+    hover:bg-brand-secondary hover:text-white hover:font-semibold
   }
 
   /* 테마 활성화 */
   .hashtag-on {
-    @apply bg-brand-secondary text-white;
+    @apply bg-brand-secondary text-white font-semibold;
   }
 }
