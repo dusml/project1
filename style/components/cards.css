@@ -1,6 +1,6 @@
 @layer components{
   .card{
-    @apply w-full;
+    @apply w-full transition-transform duration-300 hover:-translate-y-1.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0;
   }
   
   .card-image{
@@ -8,7 +8,7 @@
   }
 
   .card-image img{
-    @apply w-full h-full object-cover;
+    @apply w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none motion-reduce:transform-none;
   }
 
   .card-title{
@@ -16,14 +16,10 @@
   }
 
   .card-artist{
-    @apply mb-2 text-sm text-text-accent
+    @apply mb-2 text-sm text-text-accent;
   }
 
   .card-description{
     @apply text-text-secondary text-xs mb-3 break-all line-clamp-2;
-  }
-
-  .card-up{
-    @apply hover:translate-y-1
   }
 }
