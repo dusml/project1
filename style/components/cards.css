@@ -1,10 +1,10 @@
 @layer components{
   .card{
-    @apply w-full min-h-95;
+    @apply w-full;
   }
   
   .card-image{
-    @apply aspect-10/9 overflow-hidden rounded-t-sm mb-2;
+    @apply aspect-square overflow-hidden rounded-t-sm mb-2;
   }
 
   .card-image img{
@@ -12,7 +12,7 @@
   }
 
   .card-title{
-    @apply text-text-accent-strong text-lg xl:text-xl;
+    @apply mb-0.5 text-text-accent-strong text-lg xl:text-xl;
   }
 
   .card-artist{
